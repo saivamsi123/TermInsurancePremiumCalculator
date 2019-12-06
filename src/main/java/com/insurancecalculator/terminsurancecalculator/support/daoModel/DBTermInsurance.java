@@ -1,8 +1,8 @@
 package com.insurancecalculator.terminsurancecalculator.support.daoModel;
 
-import com.insurancecalculator.terminsurancecalculator.support.entities.Rider;
+import com.insurancecalculator.terminsurancecalculator.support.entities.TermInsurance;
 
-public class DBRider extends Rider {
+public class DBTermInsurance extends TermInsurance {
 
 	protected int id;
 
@@ -13,6 +13,4 @@ public class DBRider extends Rider {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	
 }

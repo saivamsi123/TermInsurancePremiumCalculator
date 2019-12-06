@@ -9,11 +9,10 @@ import java.util.List;
 
 import com.insurancecalculator.terminsurancecalculator.support.daoModel.DBRider;
 import com.insurancecalculator.terminsurancecalculator.support.dbUtility.DBUtility;
-import com.insurancecalculator.terminsurancecalculator.support.entities.Rider;
 
 public class DBRiderDAO {
 
-	public List<DBRider> getAllRiders(){
+	public List<DBRider> getAllRiders() {
 		Connection conn;
 		PreparedStatement pst;
 		try {
@@ -21,9 +20,11 @@ public class DBRiderDAO {
 			conn = DBUtility.getConnection();
 			pst = conn.prepareStatement("select * from rider");
 			ResultSet rs = pst.executeQuery();
-			while(rs.next())
-			{
-				DBRider rider = new DBRider(rs.getInt(1), rs.getString(2), rs.getDouble(3));
+			while (rs.next()) {
+				DBRider rider = new DBRider();
+				rider.setId(rs.getInt(1));
+				rider.setName(rs.getString(2));
+				rider.setPerCentOfPremium(rs.getDouble(3));
 				riders.add(rider);
 			}
 			return riders;
@@ -32,8 +33,8 @@ public class DBRiderDAO {
 		}
 		return null;
 	}
-	
-	public boolean addAllRiders(DBRider dbRider) {
+
+	public int addAllRiders(DBRider dbRider) {
 		Connection conn;
 		PreparedStatement pst;
 		try {
@@ -42,13 +43,10 @@ public class DBRiderDAO {
 			pst.setInt(1, dbRider.getId());
 			pst.setString(2, dbRider.getName());
 			pst.setDouble(3, dbRider.getPerCentOfPremium());
-			int i = pst.executeUpdate();
-			return true;
-		}
-		catch(Exception ex)
-		{
+			return pst.executeUpdate();
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return false;
+		return -1;
 	}
 }

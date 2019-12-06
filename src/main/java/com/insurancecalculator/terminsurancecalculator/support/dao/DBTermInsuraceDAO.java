@@ -7,22 +7,23 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.insurancecalculator.terminsurancecalculator.support.daoModel.DBRider;
-import com.insurancecalculator.terminsurancecalculator.support.daoModel.DBtermInsurance;
+import com.insurancecalculator.terminsurancecalculator.support.daoModel.DBTermInsurance;
 import com.insurancecalculator.terminsurancecalculator.support.dbUtility.DBUtility;
 
 public class DBTermInsuraceDAO {
-	public List<DBtermInsurance> getAllTermInsurance(){
+	public List<DBTermInsurance> getAllTermInsurance() {
 		Connection conn;
 		PreparedStatement pst;
 		try {
-			List<DBtermInsurance> termInsuranceList = new ArrayList<DBtermInsurance>();
+			List<DBTermInsurance> termInsuranceList = new ArrayList<DBTermInsurance>();
 			conn = DBUtility.getConnection();
 			pst = conn.prepareStatement("select * from terminsurance");
 			ResultSet rs = pst.executeQuery();
-			while(rs.next())
-			{
-				DBtermInsurance termInsurance = new DBtermInsurance(rs.getInt(1), rs.getString(2), rs.getDouble(3));
+			while (rs.next()) {
+				DBTermInsurance termInsurance = new DBTermInsurance();
+				termInsurance.setId(rs.getInt(1));
+				termInsurance.setName(rs.getString(2));
+				termInsurance.setPerCentOfSumAssured(rs.getDouble(3));
 				termInsuranceList.add(termInsurance);
 			}
 			return termInsuranceList;
@@ -31,8 +32,8 @@ public class DBTermInsuraceDAO {
 		}
 		return null;
 	}
-	
-	public boolean addAllTermInsurance(DBtermInsurance termInsurance) {
+
+	public int addAllTermInsurance(DBTermInsurance termInsurance) {
 		Connection conn;
 		PreparedStatement pst;
 		try {
@@ -41,13 +42,10 @@ public class DBTermInsuraceDAO {
 			pst.setInt(1, termInsurance.getId());
 			pst.setString(2, termInsurance.getName());
 			pst.setDouble(3, termInsurance.getPerCentOfSumAssured());
-			int i = pst.executeUpdate();
-			return true;
-		}
-		catch(Exception ex)
-		{
+			return pst.executeUpdate();
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return false;
+		return -1;
 	}
 }
