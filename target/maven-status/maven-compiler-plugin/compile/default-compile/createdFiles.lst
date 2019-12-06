@@ -1,0 +1,10 @@
+com\insurancecalculator\terminsurancecalculator\support\daoModel\DBRider.class
+com\insurancecalculator\terminsurancecalculator\support\entities\Rider.class
+com\github\vaishnavmhetre\terminsurancecalculator\mysqldao\App.class
+com\insurancecalculator\terminsurancecalculator\support\dao\DBRiderDAO.class
+com\insurancecalculator\terminsurancecalculator\support\dao\DBTermInsuraceDAO.class
+com\insurancecalculator\terminsurancecalculator\support\entities\Proposal.class
+com\insurancecalculator\terminsurancecalculator\support\main\TestCalculator.class
+com\insurancecalculator\terminsurancecalculator\support\entities\TermInsurance.class
+com\insurancecalculator\terminsurancecalculator\support\daoModel\DBtermInsurance.class
+com\insurancecalculator\terminsurancecalculator\support\dbUtility\DBUtility.class
