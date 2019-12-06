@@ -20,7 +20,6 @@ public class RiderDaoTestCase extends TestCase {
 
 	DBUtility dbUtility;
 	DBRiderDAO dbRiderDAO;
-//	DBTermInsuraceDAO termDao;
 
 	/*
 	 * (non-Javadoc)
@@ -31,7 +30,6 @@ public class RiderDaoTestCase extends TestCase {
 		dbUtility = new DBUtility("jdbc:mysql://localhost:3306/terminsurancecalculator?serverTimezone=UTC",
 				"com.mysql.cj.jdbc.Driver", "root", "");
 		dbRiderDAO = new DBRiderDAO(dbUtility);
-//		termDao = new DBTermInsuraceDAO(dbUtility);
 	}
 
 	public void testAddRider() {
@@ -52,28 +50,7 @@ public class RiderDaoTestCase extends TestCase {
 		}
 
 	}
-//	
-//	public void testAddTermInsurance()
-//	{
-//		DBTermInsurance termInsurance = new DBTermInsurance();
-//		termInsurance.setName("vamsi");
-//		termInsurance.setPerCentOfSumAssured(10.0d);
-//		assertTrue(termDao.addTermInsurance(termInsurance) > 0);
-//	}
-//	
-//	public void testAddAllTermInsurance()
-//	{
-//		List<DBTermInsurance> termInsuranceList = new ArrayList<DBTermInsurance>();
-//		for(int i=0;i<2;i++)
-//		{
-//			DBTermInsurance termInsurance1 = new DBTermInsurance();
-//			termInsurance1.setName("vamsi");
-//			termInsurance1.setPerCentOfSumAssured(10.0d);
-//			termInsuranceList.add(termInsurance1);
-//			assertTrue(termDao.addAllTermInsurance(termInsuranceList) != new int[] {});
-//		}
-//		
-//	}
+
 
 	public void testGetRider() {
 		 
