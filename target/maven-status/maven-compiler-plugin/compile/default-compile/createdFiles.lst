@@ -4,3 +4,4 @@ com\insurancecalculator\terminsurancecalculator\support\dao\DBRiderDAO.class
 com\insurancecalculator\terminsurancecalculator\support\dao\DBTermInsuraceDAO.class
 com\insurancecalculator\terminsurancecalculator\support\main\TestCalculator.class
 com\insurancecalculator\terminsurancecalculator\support\dbUtility\DBUtility.class
+com\insurancecalculator\terminsurancecalculator\support\dao\support\Dao.class
