@@ -7,7 +7,7 @@ public class DBUtility {
 
 	protected String url;
 	protected String driver;
-	protected String userName;
+	protected String userName;	
 	protected String password;
 
 	protected Connection connection;

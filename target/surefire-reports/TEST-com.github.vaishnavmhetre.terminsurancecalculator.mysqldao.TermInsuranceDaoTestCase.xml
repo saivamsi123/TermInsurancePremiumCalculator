@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" time="0.015" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" time="0.007" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -27,26 +27,24 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\maven\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Users\Allianz3075\Desktop\Training TermInsuranceCalculator Project\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3516676624509035687.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\maven\apache-maven-3.6.3\bin;C:\Users\Allianz3075\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_102;;."/>
-    <property name="maven.conf" value="C:\maven\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\maven\apache-maven-3.6.3\bin;;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Users\Allianz3075\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_102;;D:\Softwares\eclipse-jee-2018-12-R-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\maven\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\Allianz3075"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Allianz3075"/>
-    <property name="java.class.path" value="C:\maven\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="D:\Softwares\eclipse-jee-2018-12-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_102\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean deploy -P release"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean package deploy"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -54,20 +52,18 @@
     <property name="java.version" value="1.8.0_102"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_102\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\maven\apache-maven-3.6.3\bin\.."/>
+    <property name="maven.home" value="C:\Users\Allianz3075\Desktop\Training TermInsuranceCalculator Project\Workspace\TermInsurance\mysqldao\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testAddTermInsurance" time="0"/>
-  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testAddAllTermInsurance" time="0"/>
   <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testGetTermInsurance" time="0"/>
-  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testGetAllTermInsurance" time="0.004"/>
-  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testUpdateTermInsurance" time="0.011"/>
+  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testGetAllTermInsurance" time="0"/>
+  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testAddAllTermInsurance" time="0"/>
+  <testcase classname="com.github.vaishnavmhetre.terminsurancecalculator.mysqldao.TermInsuranceDaoTestCase" name="testUpdateTermInsurance" time="0.007"/>
 </testsuite>
